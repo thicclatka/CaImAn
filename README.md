@@ -119,13 +119,13 @@ If possible, we'd also ask that you cite the papers where the original algorithm
 # Main developers
 * (emeritus) Eftychios A. Pnevmatikakis, **Flatiron Institute, Simons Foundation** 
 * (emeritus) Andrea Giovannucci, **University of North Carolina, Chapel Hill**
-* Johannes Friedrich, **Allen Institute, Seattle Washington**
-* Changjia Cai, **University of North Carolina, Chapel Hill**
+* (emeritus) Johannes Friedrich, **Allen Institute, Seattle Washington**
 * Pat Gunn, **Flatiron Institute, Simons Foundation**
-* Eric Thomson, **Flatiron Institute, Simons Foundation**
+* Kushal Kolar, **Flatiron Institute, Simons Foundation**
 
-A complete list of contributors can be found [here](https://github.com/flatironinstitute/Caiman/graphs/contributors). Currently Pat Gunn, Johannes Friedrich, and Eric Thomson are the most active contributors.
+A complete list of contributors can be found [here](https://github.com/flatironinstitute/Caiman/graphs/contributors). Currently Pat Gunn and Kushal Kolar are the most active contributors.
 
+The project also thanks Eric Thompson, Cai Changjia, and Ethan Blackwood for substantial contributions.
 
 # Acknowledgements 
 Special thanks to the following people for letting us use their datasets in demo files:
