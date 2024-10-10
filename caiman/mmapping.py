@@ -510,11 +510,7 @@ def save_memmap(filenames:list[str],
             if idx == 0:
                 fname_tot = caiman.paths.generate_fname_tot(base_name, dims, order)
                 if isinstance(f, str):
-                    if os.path.split(f)[0] == "":
-                        fname_tot = caiman.paths.fn_relocated(fname_tot)
-                    else:
-                        fname_tot = caiman.paths.fn_relocated(os.path.join(os.path.split(f)[0], os.path.basename(fname_tot)))
-                    # fname_tot = caiman.paths.fn_relocated(os.path.join(os.path.split(f)[0], fname_tot))
+                    fname_tot = caiman.paths.fn_relocated(os.path.join(os.path.split(f)[0], fname_tot))
                 if len(filenames) > 1:
                     big_mov = np.memmap(caiman.paths.fn_relocated(fname_tot),
                                         mode='w+',
@@ -539,7 +535,6 @@ def save_memmap(filenames:list[str],
             sys.stdout.flush()
             Ttot = Ttot + T
 
-        # fname_new = os.path.join(caiman.paths.get_tempdir(), caiman.paths.fn_relocated(f'{fname_tot}_frames_{Ttot}.mmap'))
         fname_new = caiman.paths.fn_relocated(f'{fname_tot}_frames_{Ttot}.mmap')
 
         try:
